@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    
+  
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
@@ -32,18 +31,19 @@
         top: 0;
         background: var(--main-bg);
         height: 100vh;
-        width: 200px;
+        width: 250px;
         padding: 20px;
+        
       }
       main {
-        margin-left: 200px;
+        margin-left: 250px;
       }
       header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: var(--main-bg);
-        padding: 20px 40px;
+        padding: 20px 60px;
       }
       .search {
         background: #fff;
@@ -85,7 +85,7 @@
         font-weight: 600;
       }
       .link--medium {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
       }
       .user-block {
         display: flex;
@@ -100,11 +100,13 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
       .links *:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: rem;
       }
       .menu__list {
         list-style-type: none;
         padding-left: 0;
+        padding:15px 0;
+      
       }
       .menu__link {
         display: flex;
@@ -113,7 +115,7 @@
         align-items: center;
       }
       .menu__icon--medium {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
       .menu__icon--small {
         font-size: .7rem;
@@ -129,105 +131,221 @@
       .mr-2 {
         margin-right: .5rem;
       }
+      .Cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+       
+        padding: 10px 60px;
+        height: 300px; 
+        background: linear-gradient(to bottom, #f6f7ff 0%, #f6f7ff 50%,  #fff 50%,  #fff 100%);
+      }  
+       .front{
+    
+        background-color: #9BA7B2;
+        display: block;
+        width: 420px;
+        height: 250px;
+        border-radius: 20px;
+       
+        box-shadow: 0.4em 0.4em 5px rgba(155, 155, 155, 0.5);
+        border: 0.2px solid rgb(212, 212, 212);
+       
+        
+       
+       }
+       .card1{
+        background: linear-gradient(-125deg, #d6d7fd, #ddfffe 55%);
+       }
+       .card2{
+        background: linear-gradient(-125deg, #fdb9ff, #fff2d0 55%);
+       }
+       .card3{
+        background: linear-gradient(-125deg, #b9ffd5, #dbf5ed 55%);
+       }
+      
+        .Grafiklist{ 
+         background: white;
+         padding: 10px 60px;
+         height: 250px; 
+
+        }
+        hr {
+         background-color: #bebebe;
+         border: 0;
+         height: 0.5px;
+         margin: 22px 0 22px 0;box-sizing:
+         content-box;
+         display: block;
+         
+        }
+        .Task_wrapper{
+         
+        
+         height: 150px; 
+         display: flex;
+                
+         justify-content:center;
+         flex-direction:row;
+         justify-content: space-between;
+               
+       
+         
+
+        }
+        
+        .task{
+          display: flex;
+          width: 320px;
+          height: 150px;
+          
+          align-items: center;
+          flex-direction: row;
+        
+          justify-content: space-between;
+
+        }
+        .task_name{
+            font-weight: bold;
+            font-size: 80%;
+            color: #9b9a9a;
+           
+
+        }
+        .task_date{
+            
+            font-size: 80%;
+            color: #9b9a9a;
+        }
+        .int{
+            font-size: 200%;
+            font-weight: bold;
+            color: #51459f;
+
+           
+           
+
+        }
+        .task_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80px;
+        
+           
+        }
+        .menu__item {
+            margin-bottom: 1rem;
+        }
+
+
+     
+      
     </style>
   </head>
   <body>
     <div class="wrapper">
       <aside class="sidebar">
-        <div class="logo">Super Finti</div>
+        <div class="logo">
+            <span class="icon_logo">
+                <i class="las la-dice-d20"></i>
+            </span>
+            <span class="name_logo">Super Finti</span>
+        </div>
 
         <nav class="menu">
           <h5 class="menu__subtitle">Main Navigation</h5>
 
           <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./" class="menu__link">
-                <span class="menu__text">
-                  <span class="menu__icon menu__icon--medium mr-2">
-                    <i class="las la-th-large"></i>
-                  </span>
+              <li class="menu__item">
+                   <a href="./" class="menu__link">
+                       <span class="menu__text">
+                          <span class="menu__icon menu__icon--medium mr-2">
+                              <i class="las la-th-large"></i>
+                           </span>
 
-                  <span class="menu__item-name"> Dashboard </span>
-                </span>
+                            <span class="menu__item-name"> Dashboard </span>
+                      </span>
 
-                <span class="menu__icon menu__icon--small">
-                  <i class="las la-angle-right"></i>
-                </span>
-              </a>
-            </li>
-            <li class="menu__item">
-                <a href="./" class="menu__link">
-                  <span class="menu__text">
-                    <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
-                    </span>
-  
-                    <span class="menu__item-name"> Dashboard </span>
-                  </span>
-  
-                  <span class="menu__icon menu__icon--small">
-                    <i class="las la-angle-right"></i>
-                  </span>
-                </a>
+                        <span class="menu__icon menu__icon--small">
+                             <i class="las la-angle-right"></i>
+                        </span>
+                 </a>
               </li>
               <li class="menu__item">
-                <a href="./" class="menu__link">
-                  <span class="menu__text">
-                    <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
-                    </span>
+                   <a href="./" class="menu__link">
+                       <span class="menu__text">
+                         <span class="menu__icon menu__icon--medium mr-2">
+                              <i class="las la-exchange-alt"></i>
+                          </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
-                  </span>
+                           <span class="menu__item-name">Transactions </span>
+                     </span>
   
-                  <span class="menu__icon menu__icon--small">
-                    <i class="las la-angle-right"></i>
-                  </span>
-                </a>
+                       <span class="menu__icon menu__icon--small">
+                           <i class="las la-angle-right"></i>
+                       </span>
+                    </a>
+             </li>
+              <li class="menu__item">
+                    <a href="./" class="menu__link">
+                        <span class="menu__text">
+                             <span class="menu__icon menu__icon--medium mr-2">
+                               <i class="las la-envelope"></i>
+                           </span>
+  
+                            <span class="menu__item-name">Contacts </span>
+                      </span>
+  
+                       <span class="menu__icon menu__icon--small">
+                                 <i class="las la-angle-right"></i>
+                      </span>
+                 </a>
               </li>
               <li class="menu__item">
-                <a href="./" class="menu__link">
-                  <span class="menu__text">
-                    <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
-                    </span>
+                   <a href="./" class="menu__link">
+                     <span class="menu__text">
+                             <span class="menu__icon menu__icon--medium mr-2">
+                                  <i class="las la-toggle-on"></i>
+                             </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
-                  </span>
+                               <span class="menu__item-name"> Features </span>
+                        </span>
   
-                  <span class="menu__icon menu__icon--small">
-                    <i class="las la-angle-right"></i>
-                  </span>
-                </a>
+                        <span class="menu__icon menu__icon--small">
+                                       <i class="las la-angle-right"></i>
+                     </span>
+                  </a>
               </li>
               <li class="menu__item">
-                <a href="./" class="menu__link">
-                  <span class="menu__text">
-                    <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
-                    </span>
+                   <a href="./" class="menu__link">
+                         <span class="menu__text">
+                              <span class="menu__icon menu__icon--medium mr-2">
+                                    <i class="las la-book-open"></i>
+                             </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
-                  </span>
+                               <span class="menu__item-name"> Library </span>
+                         </span>
   
-                  <span class="menu__icon menu__icon--small">
-                    <i class="las la-angle-right"></i>
-                  </span>
-                </a>
-              </li>
-            
-          </ul>
-          <h5 class="menu__subtitle">Main Navigation</h5>
+                          <span class="menu__icon menu__icon--small">
+                                 <i class="las la-angle-right"></i>
+                          </span>
+                     </a>
+             </li>
+         </ul>
+          <h5 class="menu__subtitle">Settings & Schedules</h5>
 
           <ul class="menu__list">
             <li class="menu__item">
               <a href="./" class="menu__link">
                 <span class="menu__text">
                   <span class="menu__icon menu__icon--medium mr-2">
-                    <i class="las la-th-large"></i>
+                    <i class="las la-wallet"></i>
                   </span>
 
-                  <span class="menu__item-name"> Dashboard </span>
+                  <span class="menu__item-name">Base Wallet </span>
                 </span>
 
                 <span class="menu__icon menu__icon--small">
@@ -239,10 +357,10 @@
                 <a href="./" class="menu__link">
                   <span class="menu__text">
                     <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
+                        <i class="las la-address-card"></i>
                     </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
+                    <span class="menu__item-name">My Contacts </span>
                   </span>
   
                   <span class="menu__icon menu__icon--small">
@@ -254,10 +372,10 @@
                 <a href="./" class="menu__link">
                   <span class="menu__text">
                     <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
+                        <i class="las la-receipt"></i>
                     </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
+                    <span class="menu__item-name">Invoices </span>
                   </span>
   
                   <span class="menu__icon menu__icon--small">
@@ -269,10 +387,10 @@
                 <a href="./" class="menu__link">
                   <span class="menu__text">
                     <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
+                        <i class="las la-envelope"></i>
                     </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
+                    <span class="menu__item-name"> Schedules </span>
                   </span>
   
                   <span class="menu__icon menu__icon--small">
@@ -284,10 +402,10 @@
                 <a href="./" class="menu__link">
                   <span class="menu__text">
                     <span class="menu__icon menu__icon--medium mr-2">
-                      <i class="las la-th-large"></i>
+                        <i class="las la-cog"></i>
                     </span>
   
-                    <span class="menu__item-name"> Dashboard </span>
+                    <span class="menu__item-name"> Support </span>
                   </span>
   
                   <span class="menu__icon menu__icon--small">
@@ -335,6 +453,82 @@
             <img class="avatar" src="https://via.placeholder.com/42" alt="" />
           </div>
         </header>
+        <div class="Cards">
+            <div class="card1 front"></div>
+            <div class="card2 front"></div>
+            <div class="card3 front"></div>
+        </div>
+      
+        <div class="Grafiklist">
+            <hr>
+            <div class="Task_wrapper">
+                <div class="task">
+                    <div class="task_item">
+                        <div class="task_name"> Task in Progress</div>
+                        <div class="task_int"> 
+                            <span class="int">210</span>
+                            <span class="icon_int"></span>
+                            
+                        </div>
+                        <div class="task_date"> Current Month</div>
+                    </div>
+                    <div class="graphik">
+                        <img src="1433390_bar chart_black background_diagram_analytics_business_icon.png" alt="" width="120">
+                    </div>
+                    
+                </div>
+                <div class="task">
+                    <div class="task_item">
+                        <div class="task_name"> Task in Progress</div>
+                        <div class="task_int"> 
+                            <span class="int">210</span>
+                            <span class="icon_int"></span>
+                            
+                        </div>
+                        <div class="task_date"> Current Month</div>
+                    </div>
+                    <div class="graphik">
+                        <img src="1433390_bar chart_black background_diagram_analytics_business_icon.png" alt="" width="120">
+                    </div>
+                    
+                </div>
+                <div class="task">
+                    <div class="task_item">
+                        <div class="task_name"> Task in Progress</div>
+                        <div class="task_int"> 
+                            <span class="int">210</span>
+                            <span class="icon_int"></span>
+                            
+                        </div>
+                        <div class="task_date"> Current Month</div>
+                    </div>
+                    <div class="graphik">
+                        <img src="1433390_bar chart_black background_diagram_analytics_business_icon.png" alt="" width="120">
+                    </div>
+                    
+                </div>
+                <div class="task">
+                    <div class="task_item">
+                        <div class="task_name"> Task in Progress</div>
+                        <div class="task_int"> 
+                            <span class="int">210</span>
+                            <span class="icon_int"></span>
+                            
+                        </div>
+                        <div class="task_date"> Current Month</div>
+                    </div>
+                    <div class="graphik">
+                        <img src="1433390_bar chart_black background_diagram_analytics_business_icon.png" alt="" width="120">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <hr>
+        </div>
+
+    
+    
       </main>
     </div>
   </body>
